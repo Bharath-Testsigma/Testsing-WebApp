@@ -2,7 +2,7 @@
 
 const PRODUCTS = [
   { id:1, name:"Soft Glow Lamp",   cat:"Home",    price:48.00, emoji:"💡", bg:"linear-gradient(135deg,#ff7a59,#ffb37a)", tag:"New" },
-  { id:2, name:"Wireless Buds",    cat:"Tech",    price:79.00, emoji:"🎧", bg:"linear-gradient(135deg,#5b8def,#7ec8ff)" },
+  { id:2, name:"Wireless Pods",    cat:"Audio",   price:85.00, emoji:"🎧", bg:"linear-gradient(135deg,#5b8def,#7ec8ff)" },
   { id:3, name:"Knit Beanie",      cat:"Wear",    price:24.00, emoji:"🧢", bg:"linear-gradient(135deg,#7a5bff,#b07aff)" },
   { id:4, name:"Ceramic Mug",      cat:"Kitchen", price:18.00, emoji:"☕", bg:"linear-gradient(135deg,#ff5b8d,#ff7aae)", tag:"Sale" },
   { id:5, name:"Desk Plant",       cat:"Home",    price:32.00, emoji:"🪴", bg:"linear-gradient(135deg,#3ec98a,#7affc8)" },
