@@ -232,15 +232,11 @@ footer{border-top:var(--border);background:var(--ink);color:var(--paper);
 /* ---- plain-text "Featured" caption (normal text, not the display heading) ---- */
 .plain-note{font-family:var(--font-body);font-weight:500;font-size:15px;text-transform:none;margin-top:12px}
 
-/* ---- featured section: Wireless Buds card pulled to the right, oddly placed ---- */
-.section.featured{position:relative;min-height:500px}
-.section.featured #featuredGrid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:700px}
-.section.featured #featuredGrid .card:nth-child(2){
-  position:absolute;top:104px;right:10px;width:252px;
-  transform:rotate(-7deg);z-index:6;box-shadow:13px 13px 0 var(--ink)}
-.section.featured #featuredGrid .card:nth-child(2):hover{transform:rotate(-3deg) translate(-4px,-4px)}
+/* ---- Wireless Buds featured card: fixed to TOP-LEFT, visible without scrolling ---- */
+#featuredGrid .card:nth-child(2){
+  position:fixed;top:120px;left:16px;width:230px;z-index:35;
+  transform:rotate(-4deg);box-shadow:13px 13px 0 var(--ink)}
+#featuredGrid .card:nth-child(2):hover{transform:rotate(-1deg) translate(-3px,-3px)}
 @media(max-width:880px){
-  .section.featured{min-height:0}
-  .section.featured #featuredGrid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));max-width:none}
-  .section.featured #featuredGrid .card:nth-child(2){position:static;width:auto;transform:rotate(1deg);box-shadow:var(--shadow)}
+  #featuredGrid .card:nth-child(2){position:static;width:auto;transform:rotate(1deg);box-shadow:var(--shadow);z-index:auto}
 }
