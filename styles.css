@@ -240,3 +240,16 @@ footer{border-top:var(--border);background:var(--ink);color:var(--paper);
 @media(max-width:880px){
   #featuredGrid .card:nth-child(2){position:static;width:auto;transform:rotate(1deg);box-shadow:var(--shadow);z-index:auto}
 }
+
+/* ---- Wireless Buds card only: plain, readable text (normal font, AI-bot friendly) ---- */
+#featuredGrid .card:nth-child(2) h3,
+#featuredGrid .card:nth-child(2) .price,
+#featuredGrid .card:nth-child(2) .btn{
+  font-family:var(--font-body);
+  font-weight:500;
+  text-transform:none;     /* normal sentence/title casing, not all-caps */
+  letter-spacing:normal;
+}
+#featuredGrid .card:nth-child(2) .price{
+  transform:none;          /* un-tilt the price so it reads straight */
+}
